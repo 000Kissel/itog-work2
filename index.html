@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Простой менеджер расходов</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="wrapper">
+            <h2 class="title">Простой менеджер расходов</h2>
+            <input type="text" id="name" placeholder="Название операции">
+            <input type="number" id="sum" class="sum" placeholder="Сумма">
+            <select name="" id="category">
+                <option value="Еда">Еда</option>
+                <option value="Транспорт">Транспорт</option>
+                <option value="Развлечения">Развлечение</option>
+                <option value="Другое">Другое</option>
+            </select>
+            <button id="btn" class="btn">Добавить</button>
+            <span class="sumAll"></span>
+            <ul id="list">
+            </ul>
+        </div>
+    </div>
+    <div class="modal" id="modal">
+        <div class="modal__window">
+            <p class="modal__msg">Удалить?</p>
+            <button id="del">Удалить</button>
+            <button id="cancel">Отмена</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
